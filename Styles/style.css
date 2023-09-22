@@ -58,6 +58,7 @@ body {
 .header .container {
     display: flex;
     align-content: center;
+    justify-content: center;
 }
 
 .logo img {
@@ -205,6 +206,28 @@ body {
 }
 
 .products-cards-2 {
+    height: 564px;
+    width: 1200px;
+    margin-top: 24px;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(3, 312px);
+    justify-content: center;
+    justify-items: center;
+}
+
+.products-cards-3 {
+    height: 564px;
+    width: 1200px;
+    margin-top: 24px;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(3, 312px);
+    justify-content: center;
+    justify-items: center;
+}
+
+.products-cards-4 {
     height: 564px;
     width: 1200px;
     margin-top: 24px;
@@ -385,7 +408,7 @@ body {
     outline: none;
     border-radius: 8px;
     background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
-    padding 4px 4px;
+    padding: 4px 4px;
     position: relative;
 
 }
@@ -427,7 +450,7 @@ body {
     line-height: 140%;
     color: #757575;
     position: absolute;
-    top: 50%
+    top: 50%;
     left: 0%;
     transform: translateX(10px);
     transition: all 2s ease;
@@ -465,4 +488,19 @@ body {
 
 .order-button:hover {
     background: linear-gradient(95.61deg, #AC6115 0%, #9E7A19 100%);
+}
+
+.footer {
+    padding: 60px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rights {
+    font-size: 16px;
+    line-height: 20px;
 }
