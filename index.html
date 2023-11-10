@@ -27,7 +27,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="currency" title="Изменить валюту">$</div>
+            <div class="currency" title="Изменить валюту" id="change-currency">$</div>
         </div>
     </header>
 </section>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">8 $</div>
+                            <div class="price-title" data-base-price="8">8 $</div>
                             <div class="weight-title">360 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -111,7 +111,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">7 $</div>
+                            <div class="price-title" data-base-price="7">7 $</div>
                             <div class="weight-title">390 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -128,7 +128,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">10 $</div>
+                            <div class="price-title" data-base-price="10">10 $</div>
                             <div class="weight-title">420 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -148,7 +148,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">7 $</div>
+                            <div class="price-title" data-base-price="7">7 $</div>
                             <div class="weight-title">220 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -165,7 +165,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">8 $</div>
+                            <div class="price-title" data-base-price="8">8 $</div>
                             <div class="weight-title">220 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -182,7 +182,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">9 $</div>
+                            <div class="price-title" data-base-price="9">9 $</div>
                             <div class="weight-title">320 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -202,7 +202,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">8 $</div>
+                            <div class="price-title" data-base-price="8">8 $</div>
                             <div class="weight-title">280 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -219,7 +219,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">7 $</div>
+                            <div class="price-title" data-base-price="7">7 $</div>
                             <div class="weight-title">380 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -236,7 +236,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">11 $</div>
+                            <div class="price-title" data-base-price="11">11 $</div>
                             <div class="weight-title">400 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -256,7 +256,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">9 $</div>
+                            <div class="price-title" data-base-price="9">9 $</div>
                             <div class="weight-title">300 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -273,7 +273,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">8 $</div>
+                            <div class="price-title" data-base-price="8">8 $</div>
                             <div class="weight-title">320 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -290,7 +290,7 @@
                     </div>
                     <div class="inlay-orderbox">
                         <div class="price-weight">
-                            <div class="price-title">9 $</div>
+                            <div class="price-title" data-base-price="9">9 $</div>
                             <div class="weight-title">360 гр</div>
                         </div>
                         <button class="inlay-button">Заказать <img src="images/Vector.png" alt="cart"
@@ -313,29 +313,29 @@
                 <div class="order-form">
                     <div class="input-container">
                         <label>
-                            <input type="text" placeholder="1">
+                            <input type="text" placeholder="1" id="burger">
                         </label>
                         <label class="holder">Ваш заказ</label>
                     </div>
                     <div class="input-container">
                         <label>
-                            <input type="text" placeholder="1">
+                            <input type="text" placeholder="1" id="name">
                         </label>
                         <label class="holder">Ваше имя</label>
                     </div>
                     <div class="input-container">
                         <label>
-                            <input type="text" placeholder="1">
+                            <input type="text" placeholder="1" id="phone">
                         </label>
                         <label class="holder">Ваш телефон</label>
                     </div>
-                    <button class="order-button">Оформить заказ</button>
+                    <button class="order-button" id="order-action">Оформить заказ</button>
                 </div>
             </div>
         </div>
     </Div>
 </section>
-<footer> class="footer">
+<footer class="footer">
     <div class="container">
         <div class="logo">
             <img src="images/Logo.png" alt="logo"/>
